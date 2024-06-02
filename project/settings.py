@@ -58,7 +58,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,3 +134,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Stripe settings
+# STRIPE_SECRET_KEY = 'sk_test_51PNA8L08BLrV1M5TEsESJjBu8P4BRkAdYHLTWbsWZpArmgC5nfuEVi1NzaHC2UD1lhQBnRRhQvS7SCZf1fFkTGET00WH3Y9Jp8'
+# STRIPE_PUBLISHABLE_KEY = 'pk_test_51PNA8L08BLrV1M5TibzGMKYnrcIJIBzcMkoib6vJSy8D9YGiPf8Rfh5OZMpICBXoBhkmglFhvJXoesDUomjXKF4x00VRwBBEtb'

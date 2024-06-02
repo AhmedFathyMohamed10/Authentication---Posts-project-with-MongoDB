@@ -42,10 +42,6 @@ class AuthTokenSerializer(serializers.Serializer):
         raise serializers.ValidationError("Incorrect Credentials")
 
 
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate
-from rest_framework import serializers
-
 class ChangePasswordSerializer(serializers.Serializer):
     old_password = serializers.CharField(required=True, write_only=True)
     new_password = serializers.CharField(required=True, write_only=True)
